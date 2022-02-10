@@ -264,4 +264,4 @@ fn sum_of_square(mut result:i32) -> i32{
     }
     sum
 }
-//12. Program to check if given number is pronic number or not
+//12. Program to check if given number is pronic number or not.
