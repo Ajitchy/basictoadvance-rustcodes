@@ -241,7 +241,7 @@ fn sum_of_square(mut happy_number:i32) -> i32{
 }
 */
 //11.program to print happy number between 1 to 100
-
+/*
 fn main() {
     for i in 1..100 {
       let mut result = i;
@@ -264,4 +264,28 @@ fn sum_of_square(mut result:i32) -> i32{
     }
     sum
 }
+*/
 //12. Program to check if given number is pronic number or not.
+//A number is said to be pronic number if it is a product of two consecutive numbers.
+// Like 6 = 2*3; is pronic number
+use std::io;
+fn main() {
+    println!("Enter the number");
+    let mut input_number = String::new();
+    io::stdin().read_line(&mut input_number).expect("Not able to read the given number");
+    let pronic_number: i32 = input_number.trim().parse().expect("Entered number is not integer");
+    let num: i32 = pronic_number;
+    let mut flag = false;
+    for j in 0..num{
+        if j* (j+1) > num{
+            break;
+        }
+        if j * (j + 1) == num {
+            flag = true;
+            println!("Entered number:{} is pronic number",num);
+            break;
+        }
+    }
+
+    if !flag {println!("Entered number {} is Not a pronic", num);}
+}
