@@ -267,7 +267,7 @@ fn sum_of_square(mut result:i32) -> i32{
 */
 //12. Program to check if given number is pronic number or not.
 //A number is said to be pronic number if it is a product of two consecutive numbers.
-// Like 6 = 2*3;
+// Like 6 = 2*3; is pronic number
 use std::io;
 fn main() {
     println!("Enter the number");
