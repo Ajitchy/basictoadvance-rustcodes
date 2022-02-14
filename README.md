@@ -19,4 +19,16 @@ Codes that are included in this repository are as:
 11. program to print happy number between 1 to 100
 12. Program to check if given number is pronic number or not
 
+All the above programs(1-12) are commented with their numbering.<br>
 
+<h3>From here onwards there is use of Module and all the programs from here are
+under a single function with multiple source file.</h3>
+
+13. program to print pronic number between 1 to 100
+14. Program to determine whether a given number is a Deficient number
+15. Program to determine whether a given number is an abundant number
+16. Program to determine whether a given number is a twisted prime number
+17. Program to print all abundant numbers between 1 and 100
+18. Program to print all Kaprekar numbers between 1 to 100
+19. Program to print all prime numbers between 1 and 100
+20. Program to print the average of n numbers
