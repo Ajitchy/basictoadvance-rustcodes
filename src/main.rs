@@ -298,11 +298,15 @@ fn main() {
 use crate::deficientnumber::isdef;
 use crate::pronicnumber::pronic;
 use std::io;
+use crate::abundantnumber::checkabundant;
+
 mod pronicnumber;
 mod deficientnumber;
+mod abundantnumber;
 
 fn main(){
 
+    //13. print pronic number main call
     for i in 1..100{
         if pronic(i){
             println!("pronic numbers between 1 to 100:{}",i);
@@ -320,5 +324,9 @@ fn main(){
     } else { println!("Number is deficient");
     }
 
-
+    //Program 15 -- Abundant number main call
+    if checkabundant(n) == 0{
+        println!("Not an Abundant number");
+    }else { println!("Entered number is abundant");
+    }
 }
