@@ -265,9 +265,11 @@ fn sum_of_square(mut result:i32) -> i32{
     sum
 }
 */
+/*
 //12. Program to check if given number is pronic number or not.
 //A number is said to be pronic number if it is a product of two consecutive numbers.
-// Like 6 = 2*3; is pronic number
+// Like 6 = 2*3;
+
 use std::io;
 fn main() {
     println!("Enter the number");
@@ -288,4 +290,35 @@ fn main() {
     }
 
     if !flag {println!("Entered number {} is Not a pronic", num);}
+}
+ */
+//From here onwards we will start using MODULE i.e we will be making multiple source
+// files and then calling each code in the main.rs file
+
+use crate::deficientnumber::isdef;
+use crate::pronicnumber::pronic;
+use std::io;
+mod pronicnumber;
+mod deficientnumber;
+
+fn main(){
+
+    for i in 1..100{
+        if pronic(i){
+            println!("pronic numbers between 1 to 100:{}",i);
+        }
+    }
+
+    //Program 14 -- deficient number main call
+
+    println!("Enter the number");
+    let mut input_number = String::new();
+    io::stdin().read_line(&mut input_number).expect("Not able to read the given number");
+    let n: i32 = input_number.trim().parse().expect("Entered number is not integer");
+    if isdef(n) == 0{
+        println!("The number is not deficient");
+    } else { println!("Number is deficient");
+    }
+
+
 }
