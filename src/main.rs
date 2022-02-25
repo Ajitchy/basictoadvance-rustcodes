@@ -306,6 +306,7 @@ mod deficientnumber;
 mod abundantnumber;
 mod twistedprimenumber;
 
+
 fn main(){
 
     //13. print pronic number main call
@@ -315,21 +316,21 @@ fn main(){
         }
     }
 
-    //Program 14 -- deficient number main call
-
     println!("Enter the number");
     let mut input_number = String::new();
     io::stdin().read_line(&mut input_number).expect("Not able to read the given number");
     let  n: i32 = input_number.trim().parse().expect("Entered number is not integer");
+
+    //Program 14 -- deficient number main call
     if isdef(n) == 0{
         println!("The number is not deficient");
     } else { println!("Number is deficient");
     }
 
     //Program 15 -- Abundant number main call
-    if checkabundant(n) == 0{
-        println!("Not an Abundant number");
-    }else { println!("Entered number is abundant");
+    if checkabundant(n) > n{
+        println!("Entered number is abundant");
+    }else { println!("Entered number is not abundant");
     }
 
     // program 16 -- Twisted Prime number main call
@@ -338,4 +339,16 @@ fn main(){
     }else {
         println!("Not a Twisted Prime");
     }
+
+    // program 17 -- Abundant1to100 main call
+    //println!(" Abundant number between 1 to {} is {}",n,abundant1to100(n));
+    for j in 1..=n{
+        if checkabundant(j) > j{
+            println!("Abundant number between 1 to {}:{}",n,j);
+        }
+    }
+
+    // Program 18 -- Program to print all Kaprekar numbers between 1 to 100
+
+
 }
