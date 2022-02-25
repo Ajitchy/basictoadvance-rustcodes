@@ -1,6 +1,19 @@
 // Program 15 -- Abundant number
 //The number for which the sum of its proper divisors is greater than the number itself.
 pub fn checkabundant(n:i32) -> i32 {
+    let mut sum = 0;
+    for i in 1..n {
+        if n%i ==0 {
+            sum =sum + i;
+        }
+    }
+    sum
+
+}
+
+/*
+Another way to do same program
+pub fn checkabundant(n:i32) -> i32 {
     i32::from(getsum(n) > n)
 }
 fn getsum(n:i32) -> i32 {
@@ -19,3 +32,4 @@ fn getsum(n:i32) -> i32 {
     sum = sum -n;
     sum
 }
+ */
