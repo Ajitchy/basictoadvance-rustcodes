@@ -38,6 +38,8 @@ under a single function with multiple source file.</h3>
 24. Program to print the sum of digits without using modulus
 25. Program to swap two numbers
 26. Program to swap two numbers without using the third variable
+
+### Array Programs
 27. Program to copy all the elements of one array into another array
 28. Program to find the frequency of each element of an array
 29. Program to left rotate the elements of an array
@@ -53,6 +55,8 @@ under a single function with multiple source file.</h3>
 39. Program to right rotate the elements of an array
 40. Program to sort the elements of an array in ascending order
 41. Program to sort the elements of an array in descending order
+
+### Matrix Programs
 42. Program to calculate the addition of 2 matrices
 43. Program to calculate the subtraction of 2 matrices
 44. Program to determine whether a given matrix is an identity matrix
@@ -64,6 +68,8 @@ under a single function with multiple source file.</h3>
 50. Program to find the product of two matrices
 51. Program to find the sum of each row and each column of a matrix
 52. Program to find the transpose of a given matrix
+
+### String Programs
 53. Program to count the total number of punctuation characters exists in a string
 54. Program to count the total number of vowels and consonants in a string
 55. Program to determine whether two strings are the anagram
@@ -89,6 +95,8 @@ under a single function with multiple source file.</h3>
 75. Program to Print Smallest and Biggest Possible Palindrome Word in a Given String
 76. Program to Separate the Individual Characters from a String
 77. Program to Swap two String Variables Without Using Third or Temp Variable
+
+### Pattern Programs
 78. Program To Print Following Pattern
    
    
