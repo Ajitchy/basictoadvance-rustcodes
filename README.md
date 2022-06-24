@@ -96,17 +96,17 @@ under a single function with multiple source file.</h3>
    
 79. Program To Print Following Pattern
 
-   5432*
-   543*1
-   54*21
-   5*321
+   5432*<br>
+   543*1<br>
+   54*21<br>
+   5*321<br>
    *4321
 
 80. Program To Print Following Pattern
 
-    *000*000*
-    0*00*00*0
-    00*0*0*00
+    *000*000*<br>
+    0*00*00*0<br>
+    00*0*0*00<br>
     000***000
     
  
